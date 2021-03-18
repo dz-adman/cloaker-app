@@ -1,7 +1,7 @@
 # CLOAKER-APP
 
 ## About
-This is a link cloaking tool created on Spring-Boot that provides various features for the user to control / personalize / filter audience visiting any of his/her link.
+This is a link cloaking tool created on Spring-Boot that provides various features for the user to control / personalize / filter visitors visiting any of his/her link.
 
 (This project is made on Spring-Boot 2 using java 14)
 
@@ -20,32 +20,32 @@ This is a link cloaking tool created on Spring-Boot that provides various featur
 ## Features in Brief
 <a name="deviceBasedFilter"></a>
 - ##### Device based filter
-  This filter allows user to filter audience based on the device they are using. (Ex: Mobile, Tablet, Computer, Other Device, Browser, OS)
+  This filter allows user to filter visitors based on the device they are using. (Ex: Mobile, Tablet, Computer, Other Device, Browser, OS)
 <a name="locBasedFilter"></a>
 - ##### Location Based Filter
-  This filter allows user to filter audience based on their worldwide location. (Ex: Audience from specific Continents, Countries, States and Cities can be restricted or allowed)
+  This filter allows user to filter visitors based on their worldwide location. (Ex: visitors from specific Continents, Countries, States and Cities can be restricted or allowed)
 <a name="advLocBasedFilter"></a>
 - ##### Advanced Location Filter
-  Using this filter user can reject audience in case such as fake location where any of the location information (like country or city or longitude or latitude or anything else) maybe detected missing. It adds an extra layer of CHECK for location.
+  Using this filter user can reject visitors in case such as fake location where any of the location information (like country or city or longitude or latitude or anything else) maybe detected missing. It adds an extra layer of CHECK for location.
 <a name="proxyVpnFilter"></a>
 - ##### Proxy / Vpn check filter
-  This filter can be used to deck audience using vpn or proxy.
+  This filter can be used to deck visitors using vpn or proxy.
 <a name="refererFilter"></a>
 - ##### Referer based filter
-  User can filter out audience coming from specific sources / websites using this filter.
+  User can filter out visitors coming from specific sources / websites using this filter.
 <a name="refererSpoofing"></a>
 - ##### Referer Spoofing
   This feature can be used for [referer spofing](https://en.wikipedia.org/wiki/Referer_spoofing).
 <a name="tagUser"></a>
 - ##### Tag User (to identify recurring user)
-  This feature can be used to set a cookie on audience's end so that if same audience comes back again, it can be detected and accepted or rejected straight away without executing whole filtration process again.
+  This feature can be used to set a cookie on visitors' end so that if same visitors comes back again, it can be detected and accepted or rejected straight away without executing whole filtration process again.
 <a name="reports"></a>
 - ##### Reports
   This application also provides detailed report for every hit where user can see info about all the filters and their result.
 
 <a name="howItWorks"></a>
 ### How it Works?
-  **Step 1** : User need to create a **RuleSet** (a set of rules/filters) that are to be applied for detection / filtration of audience.  
+  **Step 1** : User need to create a **RuleSet** (a set of rules/filters) that are to be applied for detection / filtration of visitors.  
   **Step 2** : Then user need to create a Campaign with the RuleSet Id to associate RuleSet with it.  
   **Step 3** : Hit '/home' endpoint with url, and let the magic begin 💫 .
   
