@@ -3,7 +3,7 @@
 ## About
 This is a link cloaking tool created on Spring-Boot that provides various features for the user to control / personalize / filter visitors visiting any of his/her link.
 
-(This project is made on Spring-Boot 2 using java 14)
+(This project is made on Spring-Boot 2 using java 11)
 
 [ How it Works? ](#howItWorks)
 ## Project Features
